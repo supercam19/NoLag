@@ -16,3 +16,7 @@ function nolag:cmd/halt # disables certain game features to improve performance
 function nolag:cmd/killmobs # kills hostile mobs
 
 function nolag:cmd/tps # samples and tells you the TPS, takes 10 seconds to sample
+
+function nolag:cmd/itemcount # tells you how many entities will be cleared when running function nolag:cmd/clearlag
+
+function nolag:cmd/mobcount # same for the previous command but for mobs
