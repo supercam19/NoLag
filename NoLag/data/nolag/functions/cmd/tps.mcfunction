@@ -1,2 +1,0 @@
-tellraw @s [{"text":"[","color":"gold"}, {"text":"NoLag","color":"red"}, {"text":"] ","color":"gold"}, {"text":"Please wait while the TPS is being sampled","color":"green"}]
-function aestd.tools:calculate_tps
