@@ -1,3 +1,4 @@
-gamemode adventure @a
-effect give @a minecraft:resistance 1 255 true
-execute positioned as @a run fill ~-1 ~-1 ~-1 ~1 ~2 ~1 glass replace air
+gamemode spectator @a
+execute positioned as @a run summon armor_stand ~ ~ ~ {Invulnerable:1,Invisible:1,NoGravity:1,Tags:[freezePlayer]}
+execute as @a run spectate @e[tag=freezePlayer,limit=1,sort=nearest] @s
+tellraw @a [{"text":"[","color":"gold"}, {"text":"NoLag","color":"red"}, {"text":"] ","color":"gold"}, {"text":"You have been ","color":"green"}, {"text":"frozen","color":"aqua"}]

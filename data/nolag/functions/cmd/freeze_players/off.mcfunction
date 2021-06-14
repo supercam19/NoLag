@@ -1,3 +1,4 @@
 gamemode survival @a
-effect give @a minecraft:resistance 2 255 true
-execute positioned as @a run fill ~-1 ~-1 ~-1 ~1 ~2 ~1 air replace glass
+kill @e[tag=freezePlayer]
+effect give @a resistance 2 255 true
+tellraw @a [{"text":"[","color":"gold"}, {"text":"NoLag","color":"red"}, {"text":"] ","color":"gold"}, {"text":"You are no longer ","color":"green"}, {"text":"frozen","color":"aqua"}]
