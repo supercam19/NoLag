@@ -29,3 +29,6 @@ tells you how many entities will be cleared when running function nolag:cmd/clea
 
 # function nolag:cmd/mobcount 
 same for the previous command but for mobs
+
+# function nolag:cmd/help
+displays a help page for all the commands in chat
