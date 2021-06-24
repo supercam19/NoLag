@@ -1,0 +1,38 @@
+No Lag v1.1.0
+by supercam19
+https://www.github.com/supercam19/nolag
+
+This text file lists all administarator commands added by this datapack.
+OPs(Operators) can run "/function nolag:cmd/help" in game to view all commands.
+
+View file README.md for instructions on how to install and configure the datapack.
+
+Commands:
+
+function nolag:cmd/clearlag 
+ | Clears ground items and arrows
+
+function nolag:cmd/freeze_players/(on/off) 
+ | Freezes all players in place so they wont load more chunks
+
+function nolag:cmd/halt/(on/off)
+ | Disables certain game features to improve performance
+
+function nolag:cmd/killmobs 
+ | Kills most hostile mobs
+   | Mobs that shouldn't despawn will not be killed (ex: named mobs, mobs holding items, etc)
+
+function nolag:cmd/itemcount 
+ | Tells you how many entities will be cleared when running "function nolag:cmd/clearlag"
+
+function nolag:cmd/mobcount 
+ | Tells you how many mobs will be cleared when running "function nolag:cmd/killmobs"
+
+function nolag:cmd/help
+ | Displays a help page for all the commands in chat
+
+function nolag:cmd/clearprojectiles
+ | Clears projectiles in your world such as stray fireballs that could be causing lag.
+
+function nolag:cmd/uninstall
+ | Uninstalls the datapack, follow chat instructions.

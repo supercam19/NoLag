@@ -1,0 +1,1 @@
+tellraw @s ["",{"text":"[","color":"gold"},{"text":"NoLag","color":"red"},{"text":"] ","color":"gold"},{"text":"Are you sure you want to uninstall? "},{"text":"Uninstall","bold":true,"underlined":true,"color":"red","clickEvent":{"action":"suggest_command","value":"/function nolag:uninstall_confirm"}}]

@@ -1,3 +1,0 @@
-Uses AESTD tools by Aeldrion
-https://www.github.com/Aeldrion/AESTD
-https://www.twitter.com/Aeldrion

@@ -1,34 +1,26 @@
-# NoLag by supercam19
+# Description
+
+NoLag v1.1.0
+by supercam19
 https://www.github.com/supercam19/nolag
 
 A datapack for Minecraft 1.16+ to increase performance on your Minecraft server.
 
 This is a datapack made by supercam19 to improve server performance. It is reccomended for vanilla servers but can also be used on custom server jars!
 
-This datapack is highly configureable, to get to the configuration file, extract the zip, and go to data/config/functions/config.mcfunction
+# Installation
 
-Commands:
+--Getting to your datapack folder--
 
-# function nolag:cmd/clearlag 
-clears ground items and arrows
+1. Open Minecraft
+2. Select the world you want to put the datapack on
+3. Click edit > Open World Folder
+4. Open the "datapacks" folder
 
-# function nolag:cmd/freeze_players 
-freezes all players in place so they wont load more chunks
+To install the datapack, extract the NoLag.zip and place it in your datapacks folder.
 
-# function nolag:cmd/halt 
-disables certain game features to improve performance
+# Configuration
 
-# function nolag:cmd/killmobs 
-kills hostile mobs
+To configure the datapack, go to you datapacks folder for the world. Then go NoLag/data/nolag_config/functions/config.mcfunction.
 
-# function nolag:cmd/tps 
-samples and tells you the TPS, takes 10 seconds to sample
-
-# function nolag:cmd/itemcount 
-tells you how many entities will be cleared when running function nolag:cmd/clearlag
-
-# function nolag:cmd/mobcount 
-same for the previous command but for mobs
-
-# function nolag:cmd/help
-displays a help page for all the commands in chat
+If you want to also change the what happens when you run function nolag:cmd/clearlag, function nolag:cmd/killmobs or function nolag:cmd/clearprojectiles, go to NoLag/data/nolag_config/tags/entity_types/ and edit the .json file you wish.

@@ -1,13 +1,15 @@
-kill @e[type=armor_stand,tag=NoLag]
+kill @e[tag=NoLag]
 
 summon minecraft:armor_stand 0 250 0 {Tags:[NoLag],NoGravity:1,Invisible:1,Invulnerable:1}
 function nolag:loadconfig
 
-execute if score @e[tag=NoLag,limit=1] Broadcast_Reload matches 1 run tellraw @a [{"text":"[","color":"gold"}, {"text":"NoLag","color":"red"}, {"text":"] ","color":"gold"}, {"text":"Server Reloaded!","color":"green"}]
+execute if score @e[tag=NoLag,limit=1] nl.Broadcast matches 1 run tellraw @a [{"text":"[","color":"gold"}, {"text":"NoLag","color":"red"}, {"text":"] ","color":"gold"}, {"text":"Reloaded!","color":"green"}]
+
+scoreboard objectives add nl.secondTimer dummy
+scoreboard objectives add nl.clearTask dummy
+scoreboard objectives add nl.clearCount dummy
+scoreboard objectives add nl.killCount dummy
+scoreboard objectives add nl.clearWarnOP dummy
+scoreboard objectives add nl.gamemode dummy
 
 
-scoreboard objectives add secondTimer dummy
-scoreboard objectives add clearTask dummy
-scoreboard objectives add clearCount dummy
-scoreboard objectives add killCount dummy
-scoreboard objectives add clearWarnOP dummy

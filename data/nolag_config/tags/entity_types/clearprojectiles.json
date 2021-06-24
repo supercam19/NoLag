@@ -1,0 +1,20 @@
+{
+	"values": [
+		"minecraft:arrow", 
+        "minecraft:spectral_arrow", 
+        "minecraft:egg", 
+        "minecraft:snowball", 
+        "minecraft:experience_bottle", 
+        "minecraft:potion", 
+        "minecraft:llama_spit", 
+        "minecraft:ender_pearl", 
+        "minecraft:eye_of_ender", 
+        "minecraft:fireball", 
+        "minecraft:small_fireball", 
+        "minecraft:firework_rocket", 
+        "minecraft:dragon_fireball", 
+        "minecraft:wither_skull",  
+        "minecraft:shulker_bullet", 
+        "minecraft:evoker_fangs"
+	]
+}

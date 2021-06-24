@@ -1,0 +1,21 @@
+Update v1.1.0 (2021/06/24)
+
+Bigger update then usual today! A few new features and many changes.
+
+Additons
+ - New command: function nolag:cmd/uninstall will remove all traces the datapack even exsisted.
+ - New command: function nolag:cmd/clearprojectiles will remove projectiles that load chunks, to improve performance.
+ - Created changelog.txt.
+
+Changes
+- Help page now shows which page you are on.
+- No Lag scoreboards are now more unique, which should lessen issues with not being compatible with other datapacks.
+- If auto clear is turned off in the config, No Lag will no longer count time, improving performance.
+- Mobs who should not despawn normally (ie: named mobs, mobs with items, etc...)  will no longer die when running function nolag:cmd/killmobs.
+- Running function nolag:cmd/freeze_players/off now respects the gamemode the player was in before they got frozen.
+- Split the help section from file "README.md" into a new "help.txt". help.txt will list in-game commands.
+- Updated the README to be more clear and look cleaner. Now has installation and configuration instructions.
+- Default config options for halt command are changed for better general appliance.
+
+Other 
+- TPS command temporarily disabled, it was not working properly.
