@@ -14,12 +14,16 @@
 scoreboard players set @e[tag=NoLag] nl.Auto_Clear 1
 
 # This is how often you want ground entities to be removed.
-# Set this value to any integer, just change the "120" at the end.
-scoreboard players set @e[tag=NoLag] nl.Clear_Task 300
+# **THIS VALUE IS NOT SECONDS, HOWEVER NOLAG'S CUSTOM TICKS**
+# No Lag ticks once every 10 seconds
+# So the default value of 30, is 300 seconds
+scoreboard players set @e[tag=NoLag] nl.Clear_Task 30
 
 # This value is how many seconds before the ground entities are removed you want a message displayed in chat. 
 # Set to an integer less than Clear_Task
-scoreboard players set @e[tag=NoLag] nl.Clear_Time 30
+# **ALSO MEASURED IN NOLAG'S CUSTOM TICKS**
+# Here 3 is 30 seconds
+scoreboard players set @e[tag=NoLag] nl.Clear_Time 3
 
 # Should No Lag broadcast when the server reloads (using the /reload command)?
 # Set to True(1) or False(0)

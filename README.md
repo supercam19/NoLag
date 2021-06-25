@@ -12,12 +12,18 @@ This is a datapack made by supercam19 to improve server performance. It is recco
 
 --Getting to your datapack folder--
 
+Go to the latest release for No Lag, and download the NoLag_v{version}.zip attached to the release.
+
 1. Open Minecraft
 2. Select the world you want to put the datapack on
 3. Click edit > Open World Folder
 4. Open the "datapacks" folder
 
 To install the datapack, extract the NoLag.zip and place it in your datapacks folder.
+
+To know if its installed correctly, you file path should be /.minecraft/saves/{worldName}/datapacks/NoLag.
+Inside this folder you should find a file called "pack.mcmeta" thats how you know it is installed properly.
+If there is no "pack.mcmeta" in that path, it is not installed correctly.
 
 # Configuration
 
