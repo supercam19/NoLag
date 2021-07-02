@@ -1,6 +1,6 @@
 kill @e[tag=NoLag]
 
-summon minecraft:armor_stand 0 250 0 {Tags:[NoLag],NoGravity:1,Invisible:1,Invulnerable:1}
+summon minecraft:armor_stand 0 250 0 {Tags: [NoLag], NoGravity: 1, Invisible: 1, Invulnerable: 1}
 function nolag:loadconfig
 
 function nolag:tick
