@@ -11,6 +11,9 @@ scoreboard objectives add nl.clearCount dummy
 scoreboard objectives add nl.killCount dummy
 scoreboard objectives add nl.clearWarnOP dummy
 scoreboard objectives add nl.gamemode dummy
+# Commands' toggle state
+scoreboard objectives add nl.freezePlayersState dummy
+scoreboard objectives add nl.haltState dummy
 
 execute as @e[tag=NoLag] run scoreboard players operation @s nl.clearWarnOP = @s nl.Clear_Task
 execute as @e[tag=NoLag] run scoreboard players operation @s nl.clearWarnOP -= @s nl.Clear_Time
