@@ -2,7 +2,7 @@ No Lag v1.1.0
 by supercam19
 https://www.github.com/supercam19/nolag
 
-This text file lists all administarator commands added by this datapack.
+This text file lists all administrator commands added by this datapack.
 OPs(Operators) can run "/function nolag:cmd/help" in game to view all commands.
 
 View file README.md for instructions on how to install and configure the datapack.
