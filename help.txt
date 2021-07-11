@@ -12,10 +12,10 @@ Commands:
 function nolag:cmd/clearlag 
  | Clears ground items and arrows
 
-function nolag:cmd/freeze_players/(on/off) 
+function nolag:cmd/freeze_players/(on/off/toggle)
  | Freezes all players in place so they wont load more chunks
 
-function nolag:cmd/halt/(on/off)
+function nolag:cmd/halt/(on/off/toggle)
  | Disables certain game features to improve performance
 
 function nolag:cmd/killmobs 
