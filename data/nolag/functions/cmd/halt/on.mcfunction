@@ -8,3 +8,5 @@ execute if score @e[tag=NoLag,limit=1] nl.Halt_Clear matches 1 run function nola
 execute if score @e[tag=NoLag,limit=1] nl.Halt_KillMobs matches 1 run function nolag:cmd/killmobs
 
 tellraw @a [{"text":"[","color":"gold"}, {"text":"NoLag","color":"red"}, {"text":"] ","color":"gold"}, {"text":"Server activity has been ","color":"green"}, {"text":"halted!","color":"red"}]
+
+execute as @e[tag=NoLag] run scoreboard players set @s nl.haltState 1
