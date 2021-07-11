@@ -5,3 +5,4 @@ gamemode survival @a[scores={nl.gamemode=0}]
 gamemode creative @a[scores={nl.gamemode=1}]
 gamemode adventure @a[scores={nl.gamemode=2}]
 gamemode spectator @a[scores={nl.gamemode=3}]
+execute as @e[tag=NoLag] run scoreboard players set @s nl.freezeState 0

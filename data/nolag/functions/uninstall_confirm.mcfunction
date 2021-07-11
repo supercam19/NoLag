@@ -18,7 +18,7 @@ scoreboard objectives remove nl.Halt_Spawns
 scoreboard objectives remove nl.Halt_Grief
 scoreboard objectives remove nl.Halt_Traders
 scoreboard objectives remove nl.Halt_Phantoms
-scoreboard objectvies remove nl.freezePlayersState
-scoreboard objectvies remove nl.haltState
+scoreboard objectives remove nl.freezeState
+scoreboard objectives remove nl.haltState
 
 tellraw @s ["",{"text":"[","color":"gold"},{"text":"NoLag","color":"red"},{"text":"] ","color":"gold"},{"text":"UNINSTALLING. ","color":"dark_red"},{"text":"Delete the folder from your world folder before restarting the server or else it will re-install!\n\nGoodbye.","color":"green"},{"text":"\nUninstalled datapack \"NoLag\" sucessfully"}]
