@@ -1,1 +1,0 @@
-{"nolag":{"$func":["loadconfig","uninstall_confirm","tick","load"],"help":{"$func":["p_2","p_1"]},"cmd":{"$func":["clearlag","uninstall","mobcount","killmobs","itemcount","help","clearprojectiles"],"freeze_players":{"$func":["on","off"]},"halt":{"$func":["on","off"]}},"cleartask":{"$func":["cleartask","cleartaskrun"]}},"nolag_config":{"$func":["config"]}}
