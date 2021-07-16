@@ -29,4 +29,4 @@ If there is no "pack.mcmeta" in that path, it is not installed correctly.
 
 To configure the datapack, go to you datapacks folder for the world. Then go NoLag/data/nolag_config/functions/config.mcfunction.
 
-If you want to also change the what happens when you run function nolag:cmd/clearlag, function nolag:cmd/killmobs or function nolag:cmd/clearprojectiles, go to NoLag/data/nolag_config/tags/entity_types/ and edit the .json file you wish.
+If you want to also change the what happens when you run function nl:clearlag, function nl:killmobs or function nl:clearprojectiles, go to NoLag/data/nolag_config/tags/entity_types/ and edit the .json file you wish.
