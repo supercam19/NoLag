@@ -1,10 +1,10 @@
 # Description
 
-NoLag v1.1.1
+NoLag v1.1.2
 by supercam19
 https://www.github.com/supercam19/nolag
 
-A datapack for Minecraft 1.16+ to increase performance on your Minecraft server.
+A datapack for Minecraft 1.17+ to increase performance on your Minecraft server.
 
 This is a datapack made by supercam19 to improve server performance. It is reccomended for vanilla servers but can also be used on custom server jars!
 
