@@ -1,3 +1,23 @@
+Update v1.1.2 (2021/07/07)
+
+Small update, quality of life and performance improvements.
+
+Additions
+- Added an automatic debugger that will fix most common issues automatically. This has nearly no impact on performance at all
+
+Changes
+- Dropped support for 1.16.5 and below. Added compatibility with 1.17.1.
+- The namespace for admin commands is now nl. This means to run the help command you would type /function nl:help. Much more convenient.
+- Halt and freeze_players admin commands are now toggle, rather than on/off.
+- Optimized most selectors, increasing performance.
+- Changed the nl:help command with the new function names.
+- Added a link to the "help.txt" on github directly from the help page.
+- Optimized timers.
+
+Fixes
+- Fixed bug where clearing entities would sometimes not display the number of entities cleared.
+- Fixed function nl:itemcount.
+
 Update v1.1.1 (2021/06/25)
 
 Complete overhaul to No Lag's counting system. 
