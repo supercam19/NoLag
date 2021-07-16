@@ -1,6 +1,6 @@
 # Description
 
-NoLag v1.1.0
+NoLag v1.1.1
 by supercam19
 https://www.github.com/supercam19/nolag
 
