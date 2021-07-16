@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-No Lag v1.1.1
-=======
-No Lag v1.1.2
->>>>>>> Stashed changes
+NoLag v1.1.2
 by supercam19
 https://www.github.com/supercam19/nolag
 
