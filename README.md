@@ -2,7 +2,6 @@
 
 
 # Description
-
   
 
 NoLag by supercam19
@@ -17,7 +16,6 @@ A datapack for Minecraft 1.17+ to increase performance on your Minecraft server.
 
 This is a datapack made by supercam19 to improve server performance. This datapack is different from most other clearlag datapacks because it will not cause any tick lag. If you disable the features in the config, it will not run any commands on its own.
 
-  
 
 This datapack also has a configuration file, located in NoLag/data/nolag_config/functions/config.mcfunction
 
@@ -34,7 +32,6 @@ This datapack also has a configuration file, located in NoLag/data/nolag_config/
 Go to the [latest release for NoLag](https://github.com/supercam19/NoLag/releases), and download the NoLag.zip attached to the release.
 
   
-
 1. Open Minecraft
 
 2. Select the world you want to put the datapack on
@@ -56,15 +53,12 @@ Inside this folder you should find a file called "pack.mcmeta" thats how you kno
 If there is no "pack.mcmeta" in that folder, it is not installed correctly.
 
 
-  
-
 # 📃 Configuration
 
   
 
 To configure the datapack, go to you datapacks folder for the world. Then go NoLag/data/nolag_config/functions/config.mcfunction.
-
-  
+ 
 
 If you want to also change the what happens when you run function nolag:cmd/clearlag, function nolag:cmd/killmobs or function nolag:cmd/clearprojectiles, go to NoLag/data/nolag_config/tags/entity_types/ and edit the .json file you wish.
 
