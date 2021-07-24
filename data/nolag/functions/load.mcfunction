@@ -1,10 +1,26 @@
+# kill the armor stand if there is one
 kill @e[type=armor_stand,tag=NoLag]
 
+# summon a new armor stand
 summon minecraft:armor_stand 0 250 0 {Tags: [NoLag], NoGravity: 1, Invisible: 1, Invulnerable: 1}
+# see nolag/functions/loadconfig.mcfunction
 function nolag:loadconfig
+# see nolag/functions/setscores.mcfunction
+function nolag:setscores
 
-execute if score @e[type=armor_stand,tag=NoLag,limit=1] nl.Auto_Clear matches 1 run function nolag:executetick
+# if score nl.Auto_Clear is true, run function nolag/functions/executetick.mcfunction
+function nolag:executetick
 
+# remove previous arrays
+data remove storage minecraft:nolag NoLag
+
+# declare storage(arrays and strings)
+data modify storage nolag NoLag prepend value {Version:[2,0,0]}
+# the following line is for other developers who want to make NoLag forks/extensions/etc...
+# change the string Extensions to the name of your extension, it will be displayed in the debug menu
+data modify storage nolag NoLag prepend value {Extensions:"None Detected"}
+
+# declare general scoreboards
 scoreboard objectives add nl.secondTimer dummy
 scoreboard objectives add nl.clearTask dummy
 scoreboard objectives add nl.clearCount dummy
@@ -16,18 +32,34 @@ scoreboard objectives add nl.isHalted dummy
 scoreboard objectives add nl.haltToggled dummy
 scoreboard objectives add nl.freezeToggled dummy
 scoreboard objectives add nl.entityCounted dummy
+scoreboard objectives add nl.tps dummy
+scoreboard objectives add nl.errorsFixed dummy
+scoreboard objectives add nl.datapacks dummy
+scoreboard objectives add nl.onlinePlayers dummy
 
-scoreboard players set @e[type=armor_stand,tag=NoLag] nl.areFrozen 0
-scoreboard players set @e[type=armor_stand,tag=NoLag] nl.freezeToggled 0
-scoreboard players set @e[type=armor_stand,tag=NoLag] nl.isHalted 0
-scoreboard players set @e[type=armor_stand,tag=NoLag] nl.haltToggled 0
+# declare scoreboards used for /halt
+scoreboard objectives add nl.fireTick dummy
+scoreboard objectives add nl.mobSpawning dummy
+scoreboard objectives add nl.mobGriefing dummy
+scoreboard objectives add nl.traderSpawns dummy
+scoreboard objectives add nl.insomnia dummy
 
-execute as @e[type=armor_stand,tag=NoLag] run scoreboard players operation @s nl.clearWarnOP = @s nl.Clear_Task
-execute as @e[type=armor_stand,tag=NoLag] run scoreboard players operation @s nl.clearWarnOP -= @s nl.Clear_Time
+# initialise scoreboards
+scoreboard players set $NoLag nl.areFrozen 0
+scoreboard players set $NoLag nl.isHalted 0
+scoreboard players set $NoLag nl.freezeToggled 0
+scoreboard players set $NoLag nl.haltToggled 0
 
-scoreboard players set @e[type=armor_stand,tag=NoLag,limit=1] nl.isHalted 0
-scoreboard players set @e[type=armor_stand,tag=NoLag,limit=1] nl.areFrozen 0
+# create teams
+team add nl.noCollide
+team modify nl.noCollide collisionRule never
 
-execute if score @e[type=armor_stand,tag=NoLag,limit=1] nl.Broadcast matches 1 run tellraw @a [{"text":"[","color":"gold"}, {"text":"NoLag","color":"red"}, {"text":"] ","color":"gold"}, {"text":"Reloaded!","color":"green"}]
+# find the difference between score nl.Clear_Task and nl.Clear_Time. This will tell NoLag when to broadcast how long until items are removed
+scoreboard players operation $NoLag nl.clearWarnOP = $NoLag nl.Clear_Task
+scoreboard players operation $NoLag nl.clearWarnOP -= $NoLag nl.Clear_Time
 
+# announce NoLag reloaded successfully
+tellraw @a[tag=nl.debug] {"text":"[NoLag Debug] NoLag reloaded successfully!","color":"gray"}
+
+#schedule the debug for 5 seconds after load
 schedule function nolag:debug 5s

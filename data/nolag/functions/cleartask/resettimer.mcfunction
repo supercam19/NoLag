@@ -1,0 +1,1 @@
+execute if score $NoLag nl.Reset_Timer matches 1 run scoreboard players set $NoLag nl.clearTask 0
