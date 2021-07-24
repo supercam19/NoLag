@@ -1,0 +1,2 @@
+# enable gamerule sendCommandFeedback
+gamerule sendCommandFeedback true
