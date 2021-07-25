@@ -3,6 +3,7 @@ Live (Not yet released)
 Changes
  - NoAI module now ignores players in spectator mode
  - Removed fish from default killmobs
+ - Added 9 more mobs to the default NoAI list.
 
 ----------------------------------------------------------------------------------------------
 

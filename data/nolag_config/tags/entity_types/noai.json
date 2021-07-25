@@ -47,6 +47,15 @@
         "minecraft:snow_golem",
         "minecraft:axolotl",
         "minecraft:mooshroom",
-        "minecraft:turtle"
+        "minecraft:turtle",
+        "minecraft:stray",
+        "minecraft:witch",
+        "minecraft:skeleton_horse",
+        "minecraft:zombie_horse",
+        "minecraft:polar_bear",
+        "minecraft:hoglin",
+        "minecraft:zoglin",
+        "zombified_piglin",
+        "zombie_villager"
 	]
 }
