@@ -8,8 +8,8 @@ function nolag:loadconfig
 # see nolag/functions/setscores.mcfunction
 function nolag:setscores
 
-# if score nl.Auto_Clear is true, run function nolag/functions/executetick.mcfunction
-function nolag:executetick
+# unction nolag/functions/tick.mcfunction
+function nolag:tick
 
 # remove previous arrays
 data remove storage minecraft:nolag NoLag
