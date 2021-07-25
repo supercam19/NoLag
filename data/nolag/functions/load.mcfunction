@@ -15,7 +15,7 @@ function nolag:tick
 data remove storage minecraft:nolag NoLag
 
 # declare storage(arrays and strings)
-data modify storage nolag NoLag prepend value {Version:[2,0,0]}
+data modify storage nolag NoLag prepend value {Version:"2.0.0"}
 # the following line is for other developers who want to make NoLag forks/extensions/etc...
 # change the string Extensions to the name of your extension, it will be displayed in the debug menu
 data modify storage nolag NoLag prepend value {Extensions:"None Detected"}
