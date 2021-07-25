@@ -1,3 +1,10 @@
+Live (Not yet released)
+
+Changes
+ - NoAI module now ignores players in spectator mode
+
+----------------------------------------------------------------------------------------------
+
 Update v2.0.0 (2021/07/23)
 
 Biggest update ever. Tons of new features, changes and more. Get ready for bugfix updates 👍.
