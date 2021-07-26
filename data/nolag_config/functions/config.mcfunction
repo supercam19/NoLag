@@ -16,8 +16,8 @@ scoreboard players set $NoLag nl.Auto_Clear 1
 # This is how often you want ground entities to be removed.
 # **THIS VALUE IS NOT SECONDS, HOWEVER NOLAG'S CUSTOM TICKS**
 # No Lag ticks once every 10 seconds
-# So the default value of 30, is 300 seconds
-scoreboard players set $NoLag nl.Clear_Task 30
+# So the default value of 60, is 600 seconds
+scoreboard players set $NoLag nl.Clear_Task 60
 
 # This value is how many seconds before the ground entities are removed you want a message displayed in chat. 
 # Set to an integer less than nl.Clear_Task
