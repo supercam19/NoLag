@@ -1,5 +1,8 @@
 Live (Not yet released)
 
+Additions
+ - Modules menu. Accessed from "/function nl:menu"
+
 Changes
  - NoAI module now ignores players in spectator mode
  - Removed fish from default killmobs
