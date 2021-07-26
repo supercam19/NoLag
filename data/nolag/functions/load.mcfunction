@@ -1,8 +1,3 @@
-# kill the armor stand if there is one
-kill @e[type=armor_stand,tag=NoLag]
-
-# summon a new armor stand
-summon minecraft:armor_stand 0 250 0 {Tags: [NoLag], NoGravity: 1, Invisible: 1, Invulnerable: 1}
 # see nolag/functions/loadconfig.mcfunction
 function nolag:loadconfig
 # see nolag/functions/setscores.mcfunction
@@ -11,7 +6,7 @@ function nolag:setscores
 # unction nolag/functions/tick.mcfunction
 function nolag:tick
 
-# remove previous arrays
+# remove previous storages
 data remove storage minecraft:nolag NoLag
 
 # declare storage(arrays and strings)
