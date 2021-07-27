@@ -3,7 +3,7 @@ function nolag:loadconfig
 # see nolag/functions/setscores.mcfunction
 function nolag:setscores
 
-# unction nolag/functions/tick.mcfunction
+# function nolag/functions/tick.mcfunction
 function nolag:tick
 
 # remove previous storages
