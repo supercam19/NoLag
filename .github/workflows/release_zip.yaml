@@ -1,0 +1,39 @@
+name: Add Release Files
+on:
+  release:
+    types:
+      - published
+
+jobs:
+  add_zip:
+    name: Add Datapack Zip
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Get latest release
+        id: get_release
+        uses: bruceadams/get-release@v1.2.2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Zips datapack files as well as the LICENSE file
+      - name: Zip files
+        run: |
+          mkdir NoLag
+          cp -r data pack.mcmeta pack.png LICENSE NoLag
+          zip NoLag.zip NoLag/*
+          rm -r NoLag
+
+      # Uploads the zip with the latest tag appended to the name
+      # eg. NoLag_v1.2.3.zip for tag v1.2.3
+      - name: Add zip to latest release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.get_release.outputs.upload_url }}
+          asset_path: NoLag.zip
+          asset_name: NoLag_${{ steps.get_release.outputs.tag_name }}.zip
+          asset_content_type: application/zip
