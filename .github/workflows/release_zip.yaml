@@ -23,7 +23,7 @@ jobs:
         run: |
           mkdir NoLag
           cp -r data pack.mcmeta pack.png LICENSE NoLag
-          zip NoLag.zip NoLag/*
+          zip -r NoLag.zip NoLag
           rm -r NoLag
 
       # Uploads the zip with the latest tag appended to the name
