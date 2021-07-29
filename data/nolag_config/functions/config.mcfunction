@@ -8,11 +8,6 @@
 
 # Other options will accept any integer
 
-
-# Should No Lag automatically clear ground entities?
-# Set to True(1) or False(0)
-scoreboard players set $NoLag nl.Auto_Clear 1
-
 # This is how often you want ground entities to be removed.
 # **THIS VALUE IS NOT SECONDS, HOWEVER NOLAG'S CUSTOM TICKS**
 # No Lag ticks once every 10 seconds
@@ -25,23 +20,12 @@ scoreboard players set $NoLag nl.Clear_Task 60
 # Here 3 is 30 seconds
 scoreboard players set $NoLag nl.Clear_Time 3
 
-# Should NoLag stop far away mobs from having AI?
-# May break some mob farms
-# Set to 1 or 0
-scoreboard players set $NoLag nl.No_AI 0
-
-# Should NoLag stop entities from coliding with eachother?
-# This is HIGHLY recommended since it won't be very distuptive to gameplay, and will be very beneficial for performance
-# This will only affect passive mobs.
-# Set to 1 or 0
-scoreboard players set $NoLag nl.No_Collision 1
-
 # What should the max numbers of entities per block be?
 # Default is 25
 gamerule maxEntityCramming 12
 
 # The following options are for running "/function nl:halt"
-# Set the following options to 0 or 1
+# Set the following options to 0(false) or 1(true)
 # Should No Lag clear ground entities when when the server is halted?
 scoreboard players set $NoLag nl.Halt_Clear 0
 # Should No Lag kill mobs when the server is halted?

@@ -6,8 +6,14 @@ Additions
 Changes
  - NoAI module now ignores players in spectator mode
  - Removed fish from default killmobs
- - Added 9 more mobs to the default NoAI list.
+ - Added 9 more mobs to the default NoAI list
  - Doubled the default time between lag clears
+
+Fixes
+ - Fixed spelling in the comments
+
+Removed
+ - Removed module toggles from the config, since it is accessed in game now
 
 ----------------------------------------------------------------------------------------------
 
