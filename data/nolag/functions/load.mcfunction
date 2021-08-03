@@ -3,8 +3,10 @@ function nolag:loadconfig
 # see nolag/functions/setscores.mcfunction
 function nolag:setscores
 
-# function nolag/functions/tick.mcfunction
-function nolag:tick
+# setup module loops for enabled modules
+execute if score $NoLag nl.Auto_Clear matches 1 run function nolag:tick/cleartask
+execute if score $NoLag nl.No_AI matches 1 run function nolag:tick/noai
+execute if score $NoLag nl.No_Collision matches 1 run function nolag:tick/nocollision
 
 # remove previous storages
 data remove storage minecraft:nolag NoLag
@@ -12,7 +14,7 @@ data remove storage minecraft:nolag NoLag
 # declare storage(arrays and strings)
 data modify storage nolag NoLag prepend value {Version:"2.0.0"}
 data modify storage nolag NoLag prepend value {Modules:[]}
-# the following line is for other developers who want to make NoLag forks/extensions/etc...
+# the following line is for other developers who want to make NoLag extensions/etc...
 # change the string Extensions to the name of your extension, it will be displayed in the debug menu
 data modify storage nolag NoLag prepend value {Extensions:"None Detected"}
 
@@ -56,6 +58,3 @@ scoreboard players operation $NoLag nl.clearWarnOP -= $NoLag nl.Clear_Time
 
 # announce NoLag reloaded successfully
 tellraw @a[tag=nl.debug] {"text":"[NoLag Debug] NoLag reloaded successfully!","color":"gray"}
-
-#schedule the debug for 5 seconds after load
-schedule function nolag:debug 5s
