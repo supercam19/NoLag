@@ -1,4 +1,6 @@
-
+# NOTICE
+I am no longer supporting this datapack - The license has been changed to the MIT License for anyone who wants to use code (of version 2.0.2) without restriction.
+I imagine that the datapack will keep working for several updates after 1.17
 
 
 # Description

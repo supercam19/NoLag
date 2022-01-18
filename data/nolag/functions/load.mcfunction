@@ -12,7 +12,7 @@ execute if score $NoLag nl.No_Collision matches 1 run function nolag:tick/nocoll
 data remove storage minecraft:nolag NoLag
 
 # declare storage(arrays and strings)
-data modify storage nolag NoLag prepend value {Version:"2.0.0"}
+data modify storage nolag NoLag prepend value {Version:"2.0.2"}
 data modify storage nolag NoLag prepend value {Modules:[]}
 # the following line is for other developers who want to make NoLag extensions/etc...
 # change the string Extensions to the name of your extension, it will be displayed in the debug menu
